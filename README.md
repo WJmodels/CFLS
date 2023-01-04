@@ -25,5 +25,5 @@ python sample.py \
 ## CReSS_code
 
 python example_search_library_list.py \
---pretrain_model_path ./CReSS_code/models/2_5_w_model/8.pth"
---json_list ./CReSS_code/RNN_G+C/G+C_lib/case_lib.json
+--pretrain_model_path ./CReSS_code/models/2_5_w_model/8.pth \
+--json_list ./CReSS_code/RNN_G+C/G+C_lib/case_lib.json \
