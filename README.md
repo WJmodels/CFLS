@@ -11,16 +11,17 @@ password: unm6
 
 python test_infer_molecular_formula_mul_pr_rerank_copy.py \
 --weights_path ./CMGNet/weight_smiles_decoder/20220404_bart_3stage_long_1/epoch_199_loss_0.067575.pth \
---use_dict
+--use_dict \
 
 ## SampRNN
 
 python transfer_learning.py \
---weight ./SampRNN/weight/pretain_5epoch/pretrain_5_epoch.ckpt
---smiles_file ./SampRNN/case.smi
+--weight ./SampRNN/weight/pretain_5epoch/pretrain_5_epoch.ckpt \
+--smiles_file ./SampRNN/case.smi \
 
 python sample.py \
---filename ./SampRNN/weight/case.ckpt'
+--filename ./SampRNN/weight/case.ckpt \
 
 ## CReSS
 
+python example_search_library_list.py \
