@@ -19,5 +19,7 @@ python transfer_learning.py \
 --weight ./SampRNN/weight/pretain_5epoch/pretrain_5_epoch.ckpt
 --smiles_file case.smi
 
+python sample.py \
+
 ## CReSS
 
