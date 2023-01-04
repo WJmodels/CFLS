@@ -16,6 +16,7 @@ python test_infer_molecular_formula_mul_pr_rerank_copy.py \
 ## SampRNN
 
 python transfer_learning.py \
+--weight ./SampRNN/weight/pretain_5epoch/pretrain_5_epoch.ckpt
 
 ## CReSS
 
