@@ -13,3 +13,7 @@ python test_infer_molecular_formula_mul_pr_rerank_copy.py \
 --weights_path ./CMGNet/weight_smiles_decoder/20220404_bart_3stage_long_1/epoch_199_loss_0.067575.pth \
 
 ## SampRNN
+
+
+## CReSS
+
