@@ -15,6 +15,7 @@ python test_infer_molecular_formula_mul_pr_rerank_copy.py \
 
 ## SampRNN
 
+python transfer_learning.py \
 
 ## CReSS
 
