@@ -1,0 +1,12 @@
+rdkit
+json
+torchtext
+torch
+torchvision
+transformers
+datasets
+tqdm
+wandb
+pytorch_lightning
+pickle
+sys
