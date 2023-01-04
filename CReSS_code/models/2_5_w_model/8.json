@@ -1,0 +1,78 @@
+{
+    "trainer_config": {
+        "epochs": 2002,
+        "batch_size": 160,
+        "roberta_model_path": null,
+        "roberta_tokenizer_path": "models/tokenizer-smiles-roberta-1e",
+        "json_path": [
+            "../chem_data/no_duplicate/realc_t.json",
+            "../chem_data/chem_json/napacd_nodup_shiftdb2.json"
+        ],
+        "flag_use_middleware": false,
+        "save_path": "../weights/20210913_1_test",
+        "pre_trained_model_smiles": null,
+        "pre_trained_model_nmr": null,
+        "pre_trained_model_clip": "../weights/ACD4500w/chem_clip_model_epoch_4000_loss_0.007511.pth",
+        "start_epoch": 0,
+        "nmr_input_channels": 4000,
+        "use_self_correlation": false,
+        "frozen_smiles_model": false,
+        "frozen_nmr_model": false,
+        "flag_save_cpu_model": false,
+        "num_workers": 4,
+        "use_nmr_tokenizer": false,
+        "use_sample_balancing": false,
+        "nmr_model_fn": "nmr_model_version_8",
+        "loss_fn": null,
+        "smile_use_tanh": false,
+        "flag_use_big_class": false,
+        "class_number": 0,
+        "flag_get_idx": false,
+        "feature_dim": 768,
+        "lr": 1e-06,
+        "weight_decay": 0.0001,
+        "print_parm": 50,
+        "use_dict_loss": true,
+        "test_data_list": [
+            "../chem_data/no_duplicate/realc_t.json"
+        ],
+        "name": "clip_train_multi_gpus_ori_hpcvolta2.py",
+        "location": "posix.uname_result(sysname='Linux', nodename='hpcvolta1.ai.lycc.qihoo.net', release='5.8.0-49-generic', version='#55~20.04.1-Ubuntu SMP Fri Mar 26 01:01:07 UTC 2021', machine='x86_64')"
+    },
+    "model_config": {
+        "roberta_model_path": null,
+        "roberta_tokenizer_path": "models/tokenizer-smiles-roberta-1e",
+        "flag_use_middleware": false,
+        "smiles_maxlen": 300,
+        "vocab_size": 181,
+        "max_position_embeddings": 505,
+        "num_attention_heads": 12,
+        "num_hidden_layers": 6,
+        "type_vocab_size": 1,
+        "nmr_input_channels": 4000,
+        "nmr_model_fn": "nmr_model_version_8",
+        "frozen_smiles_model": false,
+        "frozen_nmr_model": false,
+        "loss_fn": null,
+        "smile_use_tanh": false,
+        "flag_use_big_class": false,
+        "class_number": 0,
+        "feature_dim": 768
+    },
+    "dataset_config": {
+        "json_path": [
+            "../chem_data/no_duplicate/realc_t.json",
+            "../chem_data/chem_json/napacd_nodup_shiftdb2.json"
+        ],
+        "smiles_tokenizer": "models/tokenizer-smiles-roberta-1e",
+        "smiles_maxlen": 300,
+        "phase": "train",
+        "nmr_scale": 10,
+        "nmr_min_value": -50,
+        "nmr_max_value": 350,
+        "nmr_augment_prob": 0.5,
+        "nmr_augment_range": 1.5,
+        "use_nmr_tokenizer": false,
+        "flag_get_idx": false
+    }
+}
